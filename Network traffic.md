@@ -15,17 +15,19 @@ Packets captured by TCPDUMP with command "sudo tcpdump -c 5 tcp"
 
 Vastaukseksi tcpdump antoi 5 TCP-pohjaista pakettia, joista löytää seuraavanlaista informaatiota:
 
-    Kellonaika, Verkkoadapteri josta paketti napattiin, TCP-lipuke, eli TCP-yhteystila, jossa liput ".", "F.", "R." ja "R", tarkoittavat seuraavia asioita:
+Kellonaika, Verkkoadapteri josta paketti napattiin, TCP-lipuke, eli TCP-yhteystila, jossa liput 
+    ".", "F.", "R." ja "R" 
+tarkoittavat seuraavia asioita:
 
-"." : Yhteys on huomattu (Acknowledgment)
-"F." : Yhteys on päätetty ja huomattu (FIN-ACK)
-"R" : Yhteys on nollattu
-"R." : Yhteys on nollattu ja huomattu (RST-ACK)
+    "." : Yhteys on huomattu (Acknowledgment)
+    "F." : Yhteys on päätetty ja huomattu (FIN-ACK)
+    "R" : Yhteys on nollattu
+    "R." : Yhteys on nollattu ja huomattu (RST-ACK)
 
 
 Napatut paketit esittävät yhteyden kiertokulun loppuosan, koska pakettien lukumäärä on rajoitettu viiteen, pakettien määrästä esiintyy kommunikointi palvelimelta selaimelle
 
-Connection acknowledged (.) --> Connection finished and acknowledged (F.) --> Connection reset and acknowledged (R.) --> Connection Reset (R)
+    Connection acknowledged (.) --> Connection finished and acknowledged (F.) --> Connection reset and          acknowledged (R.) --> Connection Reset (R)
 
 Paketeista esiintyy myös pakettien lähde IP-osoite, eli miltä serveriltä paketti lähetettiin koneeseen, ja mistä koneelta se lähti takaisin serverille.
 
