@@ -126,6 +126,10 @@ Tähän tehtävään en sen isommin löytänyt muuta kuin tuon työkalun jonka l
 
 ![image](https://github.com/konetoivonen/laksyt/assets/164856618/3b7caae0-bbc9-475e-a968-81726e18b6e0)
 
+Kokeilin myös toista enemmän itselle tunnettua työkalua, ([haveibeenpwnd](https://haveibeenpwned.com/) nimistä sivua, jossa kävi ilmi, että oma sähköpostini itseasiassa on vuotanut eri verkkosivuilla
+
+![image](https://github.com/konetoivonen/laksyt/assets/164856618/c084e206-72b5-4e2d-9bcd-4d4dba0e0e0b)
+
 # Lähteet:
 
 https://terokarvinen.com/2024/eettinen-hakkerointi-2024/
