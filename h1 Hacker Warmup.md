@@ -39,8 +39,22 @@ Joka palautti salasanan seuraavalle tasolle.
 
 
 # WebGoat:
+Asennuksen kanssa oli pieniä ongelmia, sillä aikaisempi WebGoat-asennukseni, jonka tein Lari Iso-Anttilan Tietoturvan Perusteet-kurssilla, on jostain syystä mennyt rikki, joten minun täytyi asentaa WebGoat uudestaan uudelle Kali Linux-asennukselle
 
-WebGoatin olen asentanut aikaisemman kurssin vuoksi Lari Iso-Anttilan ohjeistuksella (Tietoturvan Perusteet - ICI002AS2A-3008), 
+![image](https://github.com/konetoivonen/laksyt/assets/164856618/c0f06572-b5bf-4ee0-8cc4-8f7dce2b501a)
+
+# HTTP Basics ja Developer tools
+
+HTTP Basics tehtävässä pyydettiin laittamaan oma nimi joka sitten palautti nimen väärinpäin:
+
+![image](https://github.com/konetoivonen/laksyt/assets/164856618/5b985dcf-f328-4e30-8917-8fa8f6bafdf2)
+
+Developer Tools-tehtävässä pyydettiin tunnistamaan, oliko HTTP-pyyntö POST vai GET pyyntö ja tunnistamaan ns. Taikanumero. Tehtävän suorittamiselle on luultavasti paljon elegantimpi ratkaisutapa mutta itse vain etsin inspect-elementillä elementtiä "magic" ja löysin arvon "magic_num" jonka arvo oli 70
+
+![image](https://github.com/konetoivonen/laksyt/assets/164856618/3942fc01-f6b8-4655-8688-1d76ac617c34)
+
+
+
 
 
 # Porttiskannaus:
@@ -104,3 +118,13 @@ Ajoin myös komennon "nmap -p- localhost", joka taas palauttaa kaikki kohteen po
     Nmap done: 1 IP address (1 host up) scanned in 0.71 seconds
 
 Jos luen tuloksia oikein, omassa localhostissani ei ole avoinaisia portteja, joita voisi hyväksikäyttää tunkeutumiseen.
+
+
+# Työkalu:
+
+Tähän tehtävään en sen isommin löytänyt muuta kuin tuon työkalun jonka löytää läksyjen-tehtävänannon linkistä: https://inteltechniques.com/tools/Email.html. Laitoin tuohon oman sähköpostini jonka jälkeen painoin "Submit all" ja se avasi litanian verkkosivuja jotka ovat tarkoitettu sähköpostien etsimiseen erinäisistä vuoto-tietokannoista tai ihan vain hakukoneista. Alla vielä kuva sivusta:
+
+![image](https://github.com/konetoivonen/laksyt/assets/164856618/3b7caae0-bbc9-475e-a968-81726e18b6e0)
+
+
+
