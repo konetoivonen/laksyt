@@ -1,9 +1,19 @@
-PortSwigger SQL Injection: 
+# The Art of Hacking:
+
+- Aktiivisessa tiedustelussa tarkoituksena on kerätä mahdollisimman paljon tietoa kohdejärjestelmästä ja etsiä mahdollisia haavoittuvuuksia
+- Voidaan käyttää työkaluja kuten Nmap jolla voidaan skannata avoimia portteja, joita voi hyväksikäyttää tunkeutumisessa
+
+# Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains:
+
+- Saa terminologiansa armeijassa käytetystä Kill Chain-termistä, jolla tarkoitetaan suunnitelmaa, jolla voidaan tuoda alas tai vallata kohde hyödyntämällä koko prosessin heikointa linkkiä, esimerkiksi Supply Chain-hyökkäyksellä
+
+
+# PortSwigger SQL Injection: 
 Mitä tehtävässa tuli tehdä, oli katsoa URL-palkin tekstiä ja huomata, että sen sisältävä 'category' lippu sisältää injektio-mahdollisuuden, sillä jos URL:n loppuosasta; '/filter?category=Clothing%2c+shoes+and+accessories' muuntaa kohdan category muotoon '/filter?category='+OR+1=1-- ' se palauttaa listan julkaisemattomia tuotteita, sillä kun URL ajaa komennon 'category', kyseinen tietokanta ei tarkista mahdollisen koodinsyötön varalta, jolloin käyttäjä voi lisätä oman muuttujansa, joka tässä tapauksessa on " '+OR+1=1-- " joka käytännössä vain hakee tietokannasta kategorian julkaisemattomista tuotteista ja tarjoilee sen käyttäjälle, vaikka käyttäjällä ei pitäisi olla pääsyä kyseiseen tietokantaan.
 
 
 
-Overthewire: 
+# Overthewire: 
 ensimmäiset tasot olivat enimmäkseen SSH:n opettelua ja sen navigointia. tarkoitus oli kirjautua sisään serverille SSH:n avulla, löytää kirjautuneen koneen sisältä tietty tekstitiedosto, joka sisältää salasanan seuraavalle tasolle.
 
 Ensimmäisen tehtävän tarkoitus oli vain kirjautua sisään käyttäen seuraavaa komentoa:
@@ -28,7 +38,12 @@ Seuraavat tehtävät seurasivat samanlaista kaavaa, toisessa piti käyttää cat
 Joka palautti salasanan seuraavalle tasolle.
 
 
-Porttiskannaus:
+# WebGoat:
+
+WebGoatin olen asentanut aikaisemman kurssin vuoksi Lari Iso-Anttilan ohjeistuksella (Tietoturvan Perusteet - ICI002AS2A-3008), 
+
+
+# Porttiskannaus:
 Tehtävää varten asensin koneelleni Kali Linux-käyttöjärjestelmän ja aloin terminaalista testailemaan nmappia ja mitä se tekee. Tehtävän yhtenä tehtävänantona oli asentaa Apache tai SSH tai kumpikin ja verrata, miten erilaiselta porttiskannaus näytti ennen niiden asentamista, ja niiden jälkeen. Tässä on yksi ongelmistani, sillä Kali Linuxiin Apache ja SSH on jo valmiiksi asennettu, joten itselläni ei ole oikein ideaa, miten tulokset sitten eroaisivat muutenkaan. Anyways, ajoin muita komentoja, kuten 
 
     $ nmap -A
