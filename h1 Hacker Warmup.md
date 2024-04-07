@@ -126,5 +126,14 @@ Tähän tehtävään en sen isommin löytänyt muuta kuin tuon työkalun jonka l
 
 ![image](https://github.com/konetoivonen/laksyt/assets/164856618/3b7caae0-bbc9-475e-a968-81726e18b6e0)
 
+# Lähteet:
 
+https://terokarvinen.com/2024/eettinen-hakkerointi-2024/
 
+https://inteltechniques.com/tools/index.html
+
+https://nmap.org/
+
+https://portswigger.net/
+
+https://github.com/WebGoat/WebGoat/releases
