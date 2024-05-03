@@ -1,0 +1,35 @@
+# Lue/katso ja tiivistä
+
+OWASP 2021: Broken access control A01
+  - Haavoittuvuuden pointtina on, että yleisellä tasolla organisaatioiden jakamat oikeudet käyttäjille ovat huonosti konfiguroituja
+  - Tämä voi johtaa siihen, että käyttäjä voi hyväksikäyttää heikkouksia näissä konfiguraatioissa ja yliajaa omia oikeuksiaan ja toimia niiden ulkopuolella, tehden ja muokaten tiedostoja ja kansioita, joihin heillä ei normaalisti olisi oikeutta edes koskea.
+
+OWASP 2021: A10 Server Side Request Forgery (SSRF)
+  - SSRF tapahtuu, kun verkkoapplikaatio hakee resursseja ulkopuolisista lähteistä validoimatta sille lähetettyä, käyttäjän antamaa URL-osoitetta. Tällöin sille voidaan syöttää itse-kehitetty pyyntö, jota ei pitäisi pystyä normaalisti antamaan.
+ - Miten voi estää? Validoi ja sanitisoi kaikki käyttäjän antama URL ja input-data
+
+  PortSwigger Academy:
+
+Path Traversal:
+  - Heikkoudet tässä osassa infrastruktuuria voivat sallia käyttäjän pääsevän käsiksi kansioihin ja pahimmissa tapauksissa jopa tiedostoihin, joita serveri, joka ajaa verkkosovellusta, on tallettanut.
+
+  - Joissain tapauksissa hyökkääjä voi jopa kirjoittaa omia tiedostoja serverille.
+
+
+
+# a) b) c)
+
+  Tehty tunnilla, en erikseen saa tähän raporttiin yksityiskohtaisia ohjeita saati ruudunkaappauksia, mutta periaatteessa ajoin vain komennot, asensin ZAPin ja asetin FoxyProxyn ohjaamaan liikenteen ZAPin 8080 porttiin.
+
+# PortSwigger Labs
+
+File Path Traversal, simple case:
+
+  - Muokkaa URL-osoitetta siten, että lähetät serverille seuraavan pyynnön:
+
+    https://0ad8008d04ca6dbd81d498e500790076.web-security-academy.net/image?filename=../../../etc/passwd
+
+Koska serveri ei validoi pyyntöä, se sylkee takaisin salasanatiedoston.
+
+  
+  
